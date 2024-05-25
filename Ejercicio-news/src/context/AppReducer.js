@@ -1,11 +1,14 @@
-const books = (state, action) => {
+const characters = (state, action) => {
     switch (action.type) {
-        case value:
-            break;
+        case "GET_NEWS":
+            return {
+                ...state,
+                news: action.payload,
+            };
 
         default:
             return state;
     }
 };
 
-export default books;
+export default characters;
