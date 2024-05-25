@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes, RouterProvider } from "react-router-dom";
 import './App.scss'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
@@ -13,15 +14,19 @@ function App() {
 
 
   return (
-<div>
-  <GlobalProvider>
+  <Router>
   <Header/>
-  <WhisperForm/>
-  <Footer/>
-  <Home/>
-    <ListNews/>
+  <GlobalProvider>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/writeUs" element={<WhisperForm/>}/>
+      <Route path="/articles" element={<ListNews/>}/>
+ 
+    </Routes>
   </GlobalProvider>
-</div>
+  <Footer/>
+    
+  </Router>
   )
 }
 

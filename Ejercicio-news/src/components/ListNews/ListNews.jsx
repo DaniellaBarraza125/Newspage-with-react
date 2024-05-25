@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../../context/GlobalState';
+import "../../App.scss"
+import './ListNews.scss'
 
 const ListNews = () => {
   const { news, getNews } = useContext(GlobalContext);
@@ -8,9 +10,9 @@ const ListNews = () => {
     getNews();
   }, []);
 console.log(news);
-  // if (news.length <= 0){
-  //   return <p>Cargando...</p>
-  // }
+  if (news.length <= 0){
+    return <p>Cargando...</p>
+  }
   return (
     <div>
       {news.map((article, i) => {

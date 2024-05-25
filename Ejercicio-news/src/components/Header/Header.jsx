@@ -1,18 +1,21 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 import './Header.scss'
+import '../../App.scss'
 
 
 const Header = () => {
   return (
     <nav>
-       <div className="logo">
+      <div className="logo">
       <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Logo"/>
     </div>
     
       <ul>
-        <li>Home</li>
-        <li>Something to say?</li>
-        <li>News</li>
+        <Link to="/">Home</Link>
+        <Link to="/writeUs">Something to say?</Link>
+        <Link to="/articles">News</Link>
       <li className="search">
     <input type="text" placeholder="Search..."/>
     </li>
