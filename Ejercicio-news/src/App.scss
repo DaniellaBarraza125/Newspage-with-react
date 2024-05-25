@@ -1,0 +1,17 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: content-box;
+    margin: 0;
+}
+%flex {
+    display: flex;
+    align-items: center;
+
+}
+%button {
+    padding: 0.5em;
+    border: solid 1px; 
+    box-shadow: 4px 2px  2px  2px pink;
+    border-radius: 7px;
+}
