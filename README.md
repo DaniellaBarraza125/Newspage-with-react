@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación web de una página que muestra artículos de viaje. Utiliza la API de New York Times para obtener los últimos artículos de la sección de viajes y los muestra en la página principal. Además, permite a los usuarios enviar sus propios artículos de viaje para que puedan ser mostrados en la plataforma.
 
-<img src="./src/assets/image1.png" alt="screenshot" />
+<img src="./Ejercicio-news/src/assets/image1.png" alt="screenshot" />
 
 ## Características
 
@@ -12,7 +12,7 @@ Este proyecto es una aplicación web de una página que muestra artículos de vi
 -   Utiliza el componente Link de React Router para la navegación entre páginas.
 -   Establece un Global Context para hacer uso de ciertas variables de forma global en la aplicación.
 
-<img src="./src/assets/image.png" alt="screenshot" />
+<img src="./Ejercicio-news/src/assets/image.png" alt="screenshot" />
 
 ## Instalación
 
