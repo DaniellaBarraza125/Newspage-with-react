@@ -23,16 +23,6 @@ Este proyecto es una aplicación web de una página que muestra artículos de vi
 -   Haz clic en un artículo para ver más detalles.
 -   Utiliza el formulario de envío de artículos para enviar tus propias historias de viaje.
 
-## Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
-3. Haz tus cambios y commitea (`git commit -am 'Añade nueva funcionalidad'`).
-4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
-5. Crea un pull request para que tus cambios sean revisados.
-
 ## Tecnologías Utilizadas
 
 -   React
