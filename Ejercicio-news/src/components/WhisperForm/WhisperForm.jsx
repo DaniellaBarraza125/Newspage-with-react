@@ -48,13 +48,18 @@ const WhisperForm = () => {
     localStorage.setItem("data",JSON.stringify(data))
     console.log(data);
     setData(initialValue);
-    navigate("/");
+    navigate("/articles");
   };
 
   return (
+    <>
+    
     <div className="formContainer">
       <form onSubmit={handleOnSubmit}>
+      <h1>Envianos tu articulo</h1>
         <div>
+        <label>Nombre:</label> 
+
           <input
             type="text"
             id="name"
@@ -66,6 +71,8 @@ const WhisperForm = () => {
           />
         </div>
         <div>
+        <label>Email</label>
+
           <input
             type="email"
             id="email"
@@ -77,6 +84,7 @@ const WhisperForm = () => {
           />
         </div>
         <div>
+          <label>Titlo de tu articulo</label>
           <input
             type="text"
             id="title"
@@ -88,7 +96,7 @@ const WhisperForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="abstract">Escribe un abstract de tu articulo</label> <br />
+          <label>Escribe un abstract de tu articulo</label>
           <textarea
             id="abstract"
             name="abstract"
@@ -97,6 +105,8 @@ const WhisperForm = () => {
           />
         </div>
         <div>
+        <label>Envianos el url de tu contenido multimedia</label>
+
           <input
             type="text"
             id="multimedia"
@@ -113,6 +123,7 @@ const WhisperForm = () => {
         </div>
       </form>
     </div>
+    </>
   );
 }
 

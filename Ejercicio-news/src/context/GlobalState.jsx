@@ -4,9 +4,14 @@ import axios from "axios"
 
 const initialState = {
   news: [],
+  data:{
+    name: "",
+    email: "",
+    title: "",
+    abstract: "",
+    multimedia: "", }
 
 }
-
 
 export const GlobalContext = createContext(initialState);
 

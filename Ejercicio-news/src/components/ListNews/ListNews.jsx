@@ -14,19 +14,23 @@ console.log(news);
     return <p>Cargando...</p>
   }
   return (
-    <div>
+    <div className='articleContainer'>
+
+      
       {news.map((article, i) => {
         // console.log(article.title);
         const multimedia = article.multimedia
 
         return (
-          <div key={i}>
-            <h2>{article.title}</h2>
-            <p>{article.abstract}</p>
-                  <img  src={multimedia[2].url} alt="" />
-                  <p>{multimedia[2].caption}</p>
-        
-            <a href={article.url}>{article.url}</a>
+
+          <div className="article " key={i}>
+              <h2>{article.title}</h2>
+              <div className="articleBody">
+
+                <p>{article.abstract}</p>
+                <img  src={multimedia[2].url} alt="" />
+                <a href={article.url}>{article.url}</a>
+              </div>
           </div>
         );
       })}
