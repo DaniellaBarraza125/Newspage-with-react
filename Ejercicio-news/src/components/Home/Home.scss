@@ -1,7 +1,17 @@
-.newsBar {margin-top: 100px;
-    
-    width: 100%;
+.newsBar {
+    margin-top:105px;
     white-space: nowrap;
     overflow: hidden;
-        }
+    background-color: black;
     
+    span {
+      padding: 40px;
+      color: rgb(253, 184, 253);
+      text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue;
+    }
+  
+    .title {
+      font-weight: bold;
+    }
+  }
+  

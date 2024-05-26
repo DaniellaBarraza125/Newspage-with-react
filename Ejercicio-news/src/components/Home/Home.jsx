@@ -11,12 +11,18 @@ const Home = () => {
 
   return (
     <div className="newsBar">
-      {news.map((article, i) => {
-        console.log(article.title);
-        return (
-          <marquee direction="left" key={i}>{article.title}</marquee>
-        );
-      })}
+      
+      <marquee direction="left">
+        <span className='Title'>News</span>
+        {news.map((article, i) => {
+          console.log(article.title);
+          return (
+            <span key={i}>
+              {article.title}
+            </span>
+          );
+        })}
+      </marquee>
     </div>
   );
 }
