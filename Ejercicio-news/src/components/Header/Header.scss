@@ -2,24 +2,26 @@
 @import "../../App.scss";
 
 
-nav {
+.navContainer{
     position: fixed;
     top: 0;
-    width: 97%;
+    width: 100%;
+    padding: 20px 25px;
+    background-color: $primary-blue;
+    @extend %flex;
+    justify-content: space-between;
     img {
         height: 40px; 
     }
+    nav{
+margin: 0px 30px;
+        
+        ul {
+        text-align: right;
     @extend %flex;
-    justify-content: space-between;
-    padding: 2%;
-    background-color: $primary-blue;
 
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
         background-color: $primary-blue;
+
     
         a {
         font-size: 1.2em; 
@@ -37,5 +39,6 @@ nav {
          @extend %button
         }
 }   
+}
 
 }

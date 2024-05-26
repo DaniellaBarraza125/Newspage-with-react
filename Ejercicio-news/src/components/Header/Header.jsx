@@ -7,10 +7,12 @@ import '../../App.scss'
 
 const Header = () => {
   return (
-    <nav>
-      <div className="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Logo"/>
+    <div className='navContainer'>
+    <div className="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Logo" />
     </div>
+    <nav>
+  
     
       <ul>
         <Link to="/">Home</Link>
@@ -22,6 +24,7 @@ const Header = () => {
       </ul>
       
     </nav>
+    </div>
   )
 }
 
