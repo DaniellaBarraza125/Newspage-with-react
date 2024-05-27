@@ -1,4 +1,4 @@
-const news = (state, action) => {
+const characters = (state, action) => {
     switch (action.type) {
         case "GET_NEWS":
             return {
@@ -11,4 +11,4 @@ const news = (state, action) => {
     }
 };
 
-export default news;
+export default characters;
